@@ -66,7 +66,7 @@ namespace Sammy\Packs\StrArray {
      * Executed when the object is called.
      *
      */
-    public final function __invoke () {
+    public function __invoke () {
       $arguments = array_merge (
         func_get_args (), [debug_backtrace ()]
       );
